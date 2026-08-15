@@ -110,6 +110,70 @@ Empirical verification data under extreme memory-constrained environments:
 ========================================================
 
 ```
+ [POC Movie
+Out of deep respect for the pioneers who have shaped the open evolution of artificial intelligence, we fully release this knowledge under the **MIT License** to empower engineers worldwide to build, modify, and optimize freely.
+
+---
+
+## 🛠️ The Vision: A World Where Everyone Can Be a Mechanic
+
+Modern "brute-force corporate engineering" has centralized AI inside multi-billion-dollar data centers, turning users into mere passive consumers of locked black-box APIs. They took away our right to hack, tune, and understand the machine.
+
+**AMI changes that paradigm completely.** 
+
+By freezing the underlying single latent space and letting you freely swap out GGUF quantization layers (`Q2_K`, `Q4_K_M`, `Q8_0`, `16bit`, `32bit`) like transmission gears, AMI turns your local machine into a garage. Depending on your hardware spec (16GB, 32GB, or 64GB RAM), you can roll up your sleeves, grab your C++ wrench, open the hood, and tune your own local intelligence to absolute peak efficiency. 
+
+> *"We don't need a corporate temple. We need a personal garage. AMI is built to make everyone a true AI mechanic."*
+
+<p align="center">
+  <img src="docs/images/ami_character.png" alt="Guide AMI" width="250"/>
+  <br><i>Guide Companion: Ami — Stepping out "toko-toko" from a 16GB edge device to reshape the AI landscape.</i>
+</p>
+
+---
+
+### 📊 Empirical Evidence & Execution Time Logs
+
+Empirical verification data under extreme memory-constrained environments:
+
+* **Hardware Device**: GMKtec M7 Mini-PC (AMD Ryzen / 16GB Physical RAM, **WSL2 memory allocation strictly capped at 6,545MB ≒ approx. 6.5GB**)
+* **Resource Breakdown**: RAM 16GB (Internal Graphics: 4GB / Actual Available Memory: 12GB), SSD 512GB
+* **Execution Environment**: WSL2 (Allocated Memory: 6545MB / Swap: 8192MB)
+
+```bash
+[Translation from Japanese]
+====================================================
+⚙️  AmiEngine (Attention Mesh Index Transmission) Initializing...
+====================================================
+[GPU CONFIG] 🌐 Vulkan Global Optimization: ENABLED
+[AMI SYSTEM] Ingesting downstream layers...
+
+
+［translation］
+🤖 AMI: "Local AI Guide AMI—please ask your question."
+----------------------------------------------------
+👤 Question > How far is it from the Earth to the Sun?
+🤖 AMI: 🤖 Reasoning... [Shifting gears] ➔
+[DEBUG 1] Gear: 0, Score: -0.669407, Threshold: 1
+[DEBUG 1] Gear: 1, Score: -0.57879, Threshold: 0.9
+[DEBUG 1] Gear: 2, Score: -0.538083, Threshold: -1
+[DEBUG 1-SUCCESS] ➔ Threshold crossed! Starting generation in this room. [Elapsed time: 71.909 sec]
+.
+.
+.
+
+----------------------------------------------------
+ The average distance from the Earth to the Sun is about 93 million miles (149.6 million kilometers). This distance
+----------------------------------------------------
+
+========================================================
+📊 [⏳ Ultra-Low-Resource Environment Hack: Time Evidence Log]
+ ➔ ⏱️ Total time from app launch to ready state: 25.535 sec
+ ➔ ⚡ Time from question input to completion of answer generation: 278.178 sec
+========================================================
+
+```
+ [POC Video](https://youtu.be/Lw0zsciiRuY) 
 
 ---
 <p align="center">
