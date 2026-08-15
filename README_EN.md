@@ -272,6 +272,42 @@ ctx_params.n_ubatch  = 8;   // Optimized specifically to maintain zero Vulkan qu
 // ctx_params.n_batch   = 32;   // Maximizes parallel pipeline capacity across GPU execution threads
 // ctx_params.n_ubatch  = 16;   // Maxes out system memory bus saturation limits
 ```
+### 📂 Model Asset Placement Steps
+
+Navigate to the directory containing the `mesh_router` executable, create a `models` directory, and place the corresponding GGUF files inside it.
+*Note: You **must use the exact same base LLM** across all gears. If the base models differ, the high-dimensional vector spaces (coordinate mappings) will mismatch, making the system completely non-functional.*
+
+#### 1. Create the Directory
+```bash
+mkdir models
+```
+
+#### 2. Download Model Assets
+Visit the following Hugging Face repository, search for the specific keywords for each gear, and download the files into your `models` folder:
+🔗 [bartowski/Meta-Llama-3.1-8B-Instruct-GGUF](https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF)
+
+* **1st Gear (2-bit Version)**
+  * **Search Keyword**: `Q2_K`
+  * **Example File**: `Meta-Llama-3.1-8B-Instruct-Q2_K.gguf`
+* **2nd Gear (4-bit Version)**
+  * **Search Keyword**: `Q4_K_M`
+  * **Example File**: `Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf`
+* **3rd Gear (8-bit Version)**
+  * **Search Keyword**: `Q8_0`
+  * **Example File**: `Meta-Llama-3.1-8B-Instruct-Q8_0.gguf`
+  * *Note: While high-bit GGUF variations (such as `IQ4_NL`) are available on bartowski's page, the `Q8_0` file (approx. 8.5 GB) is highly recommended for achieving maximum localized accuracy within the GGUF ecosystem. If you require the completely unquantized (16-bit) original weights, please download them from the official Meta repository.*
+#### 3. Using Custom / Other Models
+If you wish to swap in other versions of the Llama model series, please update the paths within the `gear_table` inside the source code to match your own environment:
+
+```cpp
+// 🛠️ Static Transmission Gear Definitions via Gear Table Retention
+// *Note: Ensure you specify quantized models derived from the exact same base. (They must belong to the same LLM universe to function).*
+gear_table = {
+    {0, "models/Meta-Llama-3.1-8B-Instruct-IQ2_M.gguf",   1.0f}, // 1st Gear (2-bit): Coarse but ultra-fast exploration room
+    {1, "models/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf", 0.9f}, // 2nd Gear (4-bit): Intermediate room narrowing down specific conceptual clusters
+    {2, "models/Meta-Llama-3.1-8B-Instruct-Q8_0.gguf",   -1.0f}  // 3rd Gear (High-bit): Maximum precision blueprint—The final fortress for mini-PCs
+};
+```
 
 ---
 #### 📊 Comic & Illustration: Local AI 16-bit: The Triumph of Minimalist Efficiency
