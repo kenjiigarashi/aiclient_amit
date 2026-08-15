@@ -101,11 +101,14 @@ C++のスパナを握り、ボンネットを開け、自分の手でローカ�
  ➔ ⚡ 質問入力から解答生成完了までの時間: 278.178 秒
 ========================================================
 ```
+ [検証動画](https://youtu.be/Lw0zsciiRuY) 
 ---
 <p align="center">
   <img src="docs/images/ami_character_walk.png" alt="Guide AMI" width="250"/>
   <br><i>Guide Companion: Ami — Stepping out "toko-toko" from a 16GB edge device to reshape the AI landscape.</i>
 </p>
+
+
 
 
 ## 🗺️ 数理思想：地図データベース（カーナビ）とLLMの驚異の類似性
