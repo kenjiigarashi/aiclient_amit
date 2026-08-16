@@ -375,7 +375,7 @@ gear_table = {
 
 ---
 #### 📊 Comic & Illustration: Local AI 16-bit: The Triumph of Minimalist Efficiency
-*(※ This content is a satirical work of fiction and is for entertainment and conceptual purposes only. :) )*
+*(※ This content is satirical and is for entertainment and conceptual purposes only. :) )*
 
 ![AMI Survival Hack Comic Strip](docs/images/ami_comic.png)
 
