@@ -4,9 +4,9 @@
 
 # ⚙️ ProjectAMI: Attention Mesh Index Transmission (AMI)
 
-[![License: MIT](https://shields.io)](https://opensource.org)
-[![C++: 20](https://shields.io)](https://cppreference.com)
-[![Backend: llama.cpp](https://shields.io)](https://github.com)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](https://licenses.opensource.jp/MIT/MIT.html)
+[![C++: 20](https://img.shields.io/badge/C++-00599C?logo=C%2B%2B&logoColor=white)](https://cppreference.com)
+[![Backend: llama.cpp](https://img.shields.io/badge/Inference-llama.cpp-green)](https://github.com/ggml-org/llama.cpp)
 
 A hyper-lightweight, multi-gear subtractive inference engine written in pure C++20. ProjectAMI proves that a highly constrained commodity mini-PC can robustly execute multi-turn continuous dialogue across a multi-stage **16.33GB foundational asset pipeline** under a severe **6.5GB physical memory ceiling** without triggering a single Out-Of-Memory (OOM) crash.
 
