@@ -4,6 +4,8 @@
 
 # ⚙️ ProjectAMI: Attention Mesh Index Transmission (AMI)
 
+[📖 Read this document in English (README_EN.md)](./README_EN.md)
+
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](https://licenses.opensource.jp/MIT/MIT.html)
 [![C++: 20](https://img.shields.io/badge/C++-00599C?logo=C%2B%2B&logoColor=white)](https://cppreference.com)
 [![Backend: llama.cpp](https://img.shields.io/badge/Inference-llama.cpp-green)](https://github.com/ggml-org/llama.cpp)
